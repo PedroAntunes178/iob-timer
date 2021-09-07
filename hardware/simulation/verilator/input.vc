@@ -1,2 +1,2 @@
 // This file typically lists flags required by a large project, e.g. include directories
-+librescan +libext+.v+.sv+.vh+.svh -y .
++librescan +libext+.v+.vh -y . -I../../../submodules/INTERCON/hardware/include -I../../../hardware/include -I../../../submodules/LIB/hardware/include

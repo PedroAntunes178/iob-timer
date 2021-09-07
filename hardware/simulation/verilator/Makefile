@@ -67,7 +67,7 @@ VERILATOR_FLAGS += $(DEFINE_VERI)
 TESTBENCH_DIR = ../../testbench/
 SRC_DIR = ../../src/
 # Input files for Verilator
-VERILATOR_INPUT = -f input.vc $(VSRC_VERI) --top-module timer.v $(TESTBENCH_DIR)sim_main.cpp
+VERILATOR_INPUT = -f input.vc $(VSRC_VERI) --top-module timer_core $(TESTBENCH_DIR)sim_main.cpp
 
 ######################################################################
 default: run
@@ -86,14 +86,14 @@ run:
 # To compile, we can either
 # 1. Pass --build to Verilator by editing VERILATOR_FLAGS above.
 # 2. Or, run the make rules Verilator does:
-	$(MAKE) -j -C obj_dir -f Vtimer.mk
+	$(MAKE) -j -C obj_dir -f Vtimer_core.mk
 # 3. Or, call a submakefile where we can override the rules ourselves:
 #	$(MAKE) -j -C obj_dir -f ../Makefile_obj
 	@echo
 	@echo "-- RUN ---------------------"
 	@rm -rf logs
 	@mkdir -p logs
-	obj_dir/Vtimer +trace
+	obj_dir/Vtimer_core +trace
 	@echo
 	@echo "-- COVERAGE ----------------"
 	@rm -rf logs/annotated
