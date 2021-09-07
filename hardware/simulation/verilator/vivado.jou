@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:07 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Sat Aug 21 22:16:07 2021
+# Process ID: 3781
+# Current directory: /mnt/06F6E4DCF6E4CCCD/Documentos/Tese/IOb-SoC/make_tracing_c
+# Command line: vivado
+# Log file: /mnt/06F6E4DCF6E4CCCD/Documentos/Tese/IOb-SoC/make_tracing_c/vivado.log
+# Journal file: /mnt/06F6E4DCF6E4CCCD/Documentos/Tese/IOb-SoC/make_tracing_c/vivado.jou
+#-----------------------------------------------------------
+start_gui
+xhub::refresh_catalog [xhub::get_xstores xilinx_board_store]
+xhub::refresh_catalog [xhub::get_xstores xilinx_board_store]
